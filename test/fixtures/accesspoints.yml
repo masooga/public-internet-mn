@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  streetaddress: MyString
+  city: MyString
+  zipcode: MyString
+  publicbuilding: false
+  wirelessavailable: false
+  publicworkstations: 1
+  downloadspeed: 1
+  uploadspeed: 1
+  passwordrequired: false
+
+two:
+  streetaddress: MyString
+  city: MyString
+  zipcode: MyString
+  publicbuilding: false
+  wirelessavailable: false
+  publicworkstations: 1
+  downloadspeed: 1
+  uploadspeed: 1
+  passwordrequired: false

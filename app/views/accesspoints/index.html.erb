@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Accesspoints</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Streetaddress</th>
+      <th>City</th>
+      <th>Zipcode</th>
+      <th>Publicbuilding</th>
+      <th>Wirelessavailable</th>
+      <th>Publicworkstations</th>
+      <th>Downloadspeed</th>
+      <th>Uploadspeed</th>
+      <th>Passwordrequired</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @accesspoints.each do |accesspoint| %>
+      <tr>
+        <td><%= accesspoint.streetaddress %></td>
+        <td><%= accesspoint.city %></td>
+        <td><%= accesspoint.zipcode %></td>
+        <td><%= accesspoint.publicbuilding %></td>
+        <td><%= accesspoint.wirelessavailable %></td>
+        <td><%= accesspoint.publicworkstations %></td>
+        <td><%= accesspoint.downloadspeed %></td>
+        <td><%= accesspoint.uploadspeed %></td>
+        <td><%= accesspoint.passwordrequired %></td>
+        <td><%= link_to 'Show', accesspoint %></td>
+        <td><%= link_to 'Edit', edit_accesspoint_path(accesspoint) %></td>
+        <td><%= link_to 'Destroy', accesspoint, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Accesspoint', new_accesspoint_path %>

@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Streetaddress:</strong>
+  <%= @accesspoint.streetaddress %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @accesspoint.city %>
+</p>
+
+<p>
+  <strong>Zipcode:</strong>
+  <%= @accesspoint.zipcode %>
+</p>
+
+<p>
+  <strong>Publicbuilding:</strong>
+  <%= @accesspoint.publicbuilding %>
+</p>
+
+<p>
+  <strong>Wirelessavailable:</strong>
+  <%= @accesspoint.wirelessavailable %>
+</p>
+
+<p>
+  <strong>Publicworkstations:</strong>
+  <%= @accesspoint.publicworkstations %>
+</p>
+
+<p>
+  <strong>Downloadspeed:</strong>
+  <%= @accesspoint.downloadspeed %>
+</p>
+
+<p>
+  <strong>Uploadspeed:</strong>
+  <%= @accesspoint.uploadspeed %>
+</p>
+
+<p>
+  <strong>Passwordrequired:</strong>
+  <%= @accesspoint.passwordrequired %>
+</p>
+
+<%= link_to 'Edit', edit_accesspoint_path(@accesspoint) %> |
+<%= link_to 'Back', accesspoints_path %>

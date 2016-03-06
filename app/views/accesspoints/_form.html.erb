@@ -1,0 +1,53 @@
+<%= form_for(@accesspoint) do |f| %>
+  <% if @accesspoint.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@accesspoint.errors.count, "error") %> prohibited this accesspoint from being saved:</h2>
+
+      <ul>
+      <% @accesspoint.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :streetaddress %><br>
+    <%= f.text_field :streetaddress %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br>
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :zipcode %><br>
+    <%= f.text_field :zipcode %>
+  </div>
+  <div class="field">
+    <%= f.label :publicbuilding %><br>
+    <%= f.check_box :publicbuilding %>
+  </div>
+  <div class="field">
+    <%= f.label :wirelessavailable %><br>
+    <%= f.check_box :wirelessavailable %>
+  </div>
+  <div class="field">
+    <%= f.label :publicworkstations %><br>
+    <%= f.number_field :publicworkstations %>
+  </div>
+  <div class="field">
+    <%= f.label :downloadspeed %><br>
+    <%= f.number_field :downloadspeed %>
+  </div>
+  <div class="field">
+    <%= f.label :uploadspeed %><br>
+    <%= f.number_field :uploadspeed %>
+  </div>
+  <div class="field">
+    <%= f.label :passwordrequired %><br>
+    <%= f.check_box :passwordrequired %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
