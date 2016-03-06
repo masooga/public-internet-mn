@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'map_pages/home'
+
+  get 'map_pages/help'
+
   resources :accesspoints
 
   # The priority is based upon order of creation: first created -> highest priority.
