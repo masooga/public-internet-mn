@@ -10,9 +10,10 @@
       </ul>
     </div>
   <% end %>
-
+  <br>
+<h1>Please enter a new public internet access point</h1>
   <div class="field">
-    <%= f.label :streetaddress %><br>
+    Street Address<br>
     <%= f.text_field :streetaddress %>
   </div>
   <div class="field">
@@ -24,27 +25,29 @@
     <%= f.text_field :zipcode %>
   </div>
   <div class="field">
-    <%= f.label :publicbuilding %><br>
+    Is this a public building?<br>
     <%= f.check_box :publicbuilding %>
   </div>
   <div class="field">
-    <%= f.label :wirelessavailable %><br>
+    Is there wireless available?<br>
     <%= f.check_box :wirelessavailable %>
   </div>
   <div class="field">
-    <%= f.label :publicworkstations %><br>
+    How many public workstations are available, if any?<br>
     <%= f.number_field :publicworkstations %>
   </div>
+<h3>Internet Speed:</h3>We are also interested in collecting information on the speed of the internet at each access point. Please consider performing a speed test at <a href="http://internethealthtest.org">Internet Health Test</a> to measure the download and upload speeds of this access point. Speed is traditionally measured in megabits per second (Mbps).
+  <br>
   <div class="field">
-    <%= f.label :downloadspeed %><br>
+    Download Speed (Mbps)<br>
     <%= f.number_field :downloadspeed %>
   </div>
   <div class="field">
-    <%= f.label :uploadspeed %><br>
+    Upload Speed (Mbps)<br>
     <%= f.number_field :uploadspeed %>
   </div>
   <div class="field">
-    <%= f.label :passwordrequired %><br>
+    Is a password required to access the internet?<br>
     <%= f.check_box :passwordrequired %>
   </div>
   <div class="actions">
