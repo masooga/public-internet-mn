@@ -1,28 +1,9 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Created as part of Geo:Code 2.0
+Mapping public internet availability in Minnesota
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Website: http://public-internet-mn.herokuapp.com/
+Project documentation (helpful links and research): https://docs.google.com/spreadsheets/d/1gw6M0VaFoHKiMge-Ja7260K1KpOWGMsdcfITdtlSQG4/edit?usp=sharing
+Geo:Code 2.0 Presentation: http://opentwincities.coeventer.com/projects/146-free-public-internet-in-minnesota
+Slack us in the #public-internet channel: https://opentwincities.slack.com/
